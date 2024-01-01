@@ -1,10 +1,14 @@
 import Link from 'next/link';
+import { LiaAngleDownSolid } from 'react-icons/lia';
 
 const TopBar = () => {
   return (
-    <div className="container-alzaf flex justify-between py-1 text-xs text-gray-6">
+    <nav className="container-alzaf flex justify-between py-1 text-xs text-gray-6">
       <div className="flex gap-8">
-        <button type="button">Language</button>
+        <button type="button" className="inline-flex items-center gap-1">
+          <span>Language</span>
+          <LiaAngleDownSolid />
+        </button>
         <p>Help Center</p>
         <p>Helpline: 0964781656</p>
       </div>
@@ -15,7 +19,7 @@ const TopBar = () => {
           <Link href="/">Sign up</Link> / <Link href="/">Login</Link>
         </div>
       </div>
-    </div>
+    </nav>
   );
 };
 

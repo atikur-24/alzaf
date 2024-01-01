@@ -1,3 +1,6 @@
+/* eslint-disable import/no-unresolved */
+/* eslint-disable import/order */
+/* eslint-disable import/extensions */
 import Navbar from '@/components/Navbar/Navbar';
 import { Inter } from 'next/font/google';
 import './globals.css';

@@ -12,24 +12,77 @@ const ProductImages = () => {
   const watches = [Watch1, Watch2, Watch3, Watch4, Watch5];
 
   return (
-    <div>
+    <div className="relative">
       <Image className="rounded-sm" src={Watch3} alt="watch" />
+      <div className="absolute top-0 lg:hidden">
+        <div className="absolute left-8 top-[8px] z-10 flex items-center justify-center gap-2">
+          <div className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#00000073]">
+            <Image
+              width={10}
+              height={10}
+              src="/src/assets/icons/back.png"
+              alt="back"
+            />
+          </div>
+          <div className="relative flex items-center">
+            <Image
+              width={10}
+              height={10}
+              className="absolute left-2"
+              src="/src/assets/icons/search.png"
+              alt="search"
+            />
+            <input
+              style={{ borderRadius: '45px' }}
+              type="text"
+              className="  placeholder-text h-[28px] w-[229px] border-none bg-[#00000073] pl-6 text-white placeholder-white outline-none"
+              placeholder="Search product"
+            />
+          </div>
+          <div className="relative flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#00000073]">
+            <div className="absolute right-0 top-[-2px] h-[14px] w-[14px] rounded-full bg-[#00000073] text-center text-[6px] font-medium text-white">
+              20
+            </div>
+            <Image
+              width={10}
+              height={10}
+              src="/src/assets/icons/cart.png"
+              alt="cart"
+            />
+          </div>
+          <div className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#00000073]">
+            <Image
+              width={10}
+              height={10}
+              src="/src/assets/icons/menu.png"
+              alt="menu"
+            />
+          </div>
+        </div>
+        <div className="absolute left-48 top-[360px] z-10 h-[16px] w-[24px] rounded-sm bg-[#00000073] text-center  text-[12px] text-white">
+          1/9
+        </div>
+      </div>
       <div className="hidden lg:block">
         <div className="relative mt-[10px] flex w-full gap-[5px]">
-          {watches.map((watch) => (
+          {watches?.map((watch, idx) => (
             <Image
               height={87}
               width={87}
               key={watch.src}
-              className="rounded-[1px]"
+              className={`rounded-[1px] ${
+                idx === watches.length - 3
+                  ? 'border border-primary'
+                  : 'border-none'
+              }`}
               src={watch}
               alt="watch"
             />
           ))}
-          <div className="absolute bottom-8 left-0 bg-[#2E2E2E6B] px-[2px] py-[6px]">
+          <div className="absolute bottom-7 left-0 bg-[#2E2E2E6B] px-[2px] py-[6px]">
             <Image className="" src={LeftAngle} alt="left angle" />
           </div>
-          <div className="absolute bottom-8 right-[1px] bg-[#2E2E2E6B] px-[2px] py-[6px]">
+          <div className="absolute bottom-7 right-[1px] bg-[#2E2E2E6B] px-[2px] py-[6px]">
             <Image className="" src={RightAngle} alt="right angle" />
           </div>
           <Image

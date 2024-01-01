@@ -9,7 +9,7 @@ export default function Home() {
   return (
     <main className="container-alzaf mb-10">
       <ProductPath />
-      <section className="rounded-sm bg-white p-4">
+      <section className="rounded-sm bg-white p-2 lg:p-4">
         <ProductDetails />
         <SellingInfo />
       </section>

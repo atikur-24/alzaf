@@ -3,7 +3,7 @@ import { LiaAngleDownSolid, LiaAngleRightSolid } from 'react-icons/lia';
 
 const ProductPath = () => {
   return (
-    <div className="my-[14px] flex items-center gap-[6px] text-xs text-gray-6">
+    <div className="my-[14px] hidden items-center gap-[6px] text-xs text-gray-6 lg:flex">
       <span className="flex items-center text-sm font-semibold text-primary">
         <CgNotes /> <span className="px-[3px]">All Categories</span>{' '}
         <LiaAngleDownSolid />

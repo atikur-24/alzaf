@@ -4,7 +4,7 @@ import ProductImages from './ProductImages';
 const ProductDetails = () => {
   return (
     <section>
-      <div className="flex gap-5">
+      <div className="gap-5 lg:flex">
         <ProductImages />
         <ProductContent />
       </div>

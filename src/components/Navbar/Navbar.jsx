@@ -6,7 +6,7 @@ import TopBar from './TopBar';
 
 const Navbar = () => {
   return (
-    <header>
+    <header className="hidden lg:block">
       <TopBar />
       <div className="bg-white">
         <div className="container-alzaf">
