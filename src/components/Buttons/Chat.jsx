@@ -1,7 +1,6 @@
 import Image from 'next/image';
 import Link from 'next/link';
-// eslint-disable-next-line import/no-unresolved
-import Message from '@/assets/icons/message.svg';
+import Message from '../../assets/icons/Message.svg';
 
 const Chat = () => {
   return (
