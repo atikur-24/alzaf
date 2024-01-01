@@ -1,7 +1,7 @@
 import CartGroup from './CartGroup';
 import Logo from './Logo';
 import Search from './Search';
-// import ServiceButton from './ServiceButton';
+import ServiceButton from './ServiceButton';
 import TopBar from './TopBar';
 
 const Navbar = () => {
@@ -14,7 +14,7 @@ const Navbar = () => {
             <Logo />
             <Search />
             <CartGroup />
-            {/* <ServiceButton /> */}
+            <ServiceButton />
           </div>
         </div>
       </div>
