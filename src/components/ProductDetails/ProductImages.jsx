@@ -1,6 +1,10 @@
 import Image from 'next/image';
+import back from '../../assets/icons/back.png';
+import cart from '../../assets/icons/cart.png';
 import RightAngle from '../../assets/icons/left-angle.svg';
+import menu from '../../assets/icons/menu.png';
 import LeftAngle from '../../assets/icons/right-angle.svg';
+import search from '../../assets/icons/search.png';
 import VideoIcon from '../../assets/icons/video.svg';
 import Watch1 from '../../assets/images/products/watch-1.png';
 import Watch2 from '../../assets/images/products/watch-2.png';
@@ -17,21 +21,10 @@ const ProductImages = () => {
       <div className="absolute top-0 lg:hidden">
         <div className="absolute left-8 top-[8px] z-10 flex items-center justify-center gap-2">
           <div className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#00000073]">
-            <Image
-              width={10}
-              height={10}
-              src="/src/assets/icons/back.png"
-              alt="back"
-            />
+            <Image src={back} alt="back" />
           </div>
           <div className="relative flex items-center">
-            <Image
-              width={10}
-              height={10}
-              className="absolute left-2"
-              src="/src/assets/icons/search.png"
-              alt="search"
-            />
+            <Image className="absolute left-2" src={search} alt="search" />
             <input
               style={{ borderRadius: '45px' }}
               type="text"
@@ -43,20 +36,10 @@ const ProductImages = () => {
             <div className="absolute right-0 top-[-2px] h-[14px] w-[14px] rounded-full bg-[#00000073] text-center text-[6px] font-medium text-white">
               20
             </div>
-            <Image
-              width={10}
-              height={10}
-              src="/src/assets/icons/cart.png"
-              alt="cart"
-            />
+            <Image src={cart} alt="cart" />
           </div>
           <div className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#00000073]">
-            <Image
-              width={10}
-              height={10}
-              src="/src/assets/icons/menu.png"
-              alt="menu"
-            />
+            <Image src={menu} alt="menu" />
           </div>
         </div>
         <div className="absolute left-48 top-[360px] z-10 h-[16px] w-[24px] rounded-sm bg-[#00000073] text-center  text-[12px] text-white">
