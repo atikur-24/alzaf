@@ -19,7 +19,7 @@ const ProductImages = () => {
     <div className="relative">
       <Image className="rounded-sm" src={Watch3} alt="watch" />
       <div className="absolute top-0 lg:hidden">
-        <div className="absolute left-8 top-[8px] z-10 flex items-center justify-center gap-2">
+        <div className="absolute left-3 top-[8px] z-10 flex items-center justify-center gap-2">
           <div className="flex h-[28px] w-[28px] items-center justify-center rounded-full bg-[#00000073]">
             <Image src={back} alt="back" />
           </div>
@@ -28,7 +28,7 @@ const ProductImages = () => {
             <input
               style={{ borderRadius: '45px' }}
               type="text"
-              className="  placeholder-text h-[28px] w-[229px] border-none bg-[#00000073] pl-6 text-white placeholder-white outline-none"
+              className="h-[28px] w-[229px] border-none bg-[#00000073] pl-6 text-white placeholder-white outline-none placeholder:text-xs"
               placeholder="Search product"
             />
           </div>
@@ -42,7 +42,7 @@ const ProductImages = () => {
             <Image src={menu} alt="menu" />
           </div>
         </div>
-        <div className="absolute left-48 top-[360px] z-10 h-[16px] w-[24px] rounded-sm bg-[#00000073] text-center  text-[12px] text-white">
+        <div className="absolute left-48 top-[330px] z-10 h-[16px] w-[24px] rounded-sm bg-[#00000073] text-center  text-[12px] text-white">
           1/9
         </div>
       </div>
