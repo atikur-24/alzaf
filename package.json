@@ -12,6 +12,7 @@
     "prettier:fix": "npx prettier --write src"
   },
   "dependencies": {
+    "@smastrom/react-rating": "^1.4.0",
     "next": "14.0.4",
     "react": "^18",
     "react-dom": "^18",
