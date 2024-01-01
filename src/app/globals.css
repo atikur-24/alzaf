@@ -17,9 +17,9 @@
 
   /* button style */
   .buy-btn {
-    @apply inline-flex items-center justify-center  rounded-sm bg-primary px-6 py-2 text-xs font-medium   text-white lg:px-[37px] lg:py-[13px] lg:text-sm;
+    @apply inline-flex w-[180px]  items-center justify-center rounded-sm bg-primary px-6 py-2   text-xs font-medium text-white lg:px-[60px] lg:py-[13px] lg:text-sm;
   }
   .cart-btn {
-    @apply inline-flex items-center justify-center gap-2 rounded-sm bg-secondary px-6 py-2 text-xs font-medium   text-gray-7 lg:gap-[10px] lg:px-[37px] lg:py-[13px] lg:text-sm;
+    @apply inline-flex w-[180] items-center justify-center gap-2 rounded-sm bg-secondary px-6 py-2 text-xs font-medium   text-gray-7 lg:gap-[10px] lg:px-[37px] lg:py-[13px] lg:text-sm;
   }
 }
